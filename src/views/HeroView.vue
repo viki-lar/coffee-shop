@@ -77,5 +77,30 @@ import CardProductComponent from "@/components/CardProductComponent.vue";
 
 export default {
   components: { NavbarComponent, CardProductComponent },
+
+  data() {
+    return {
+      goods: [
+        {
+          id: 0,
+          image: "coffee-1.jpg",
+          name: "Solimo Coffee Beans 2kg",
+          price: "10.73$",
+        },
+        {
+          id: 1,
+          image: "coffee-1.jpg",
+          name: "Solimo Coffee Beans 2kg",
+          price: "10.73$",
+        },
+        {
+          id: 2,
+          image: "coffee-1.jpg",
+          name: "Solimo Coffee Beans 2kg",
+          price: "10.73$",
+        },
+      ],
+    };
+  },
 };
 </script>

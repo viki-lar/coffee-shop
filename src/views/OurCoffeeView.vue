@@ -1,13 +1,13 @@
 <template>
   <main>
-    <div class="banner goodspage-banner">
+    <div class="banner coffepage-banner">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <navbar-component></navbar-component>
           </div>
         </div>
-        <h1 class="title-big">For your pleasure</h1>
+        <h1 class="title-big">Our Coffee</h1>
       </div>
     </div>
     <section class="shop">
@@ -16,7 +16,7 @@
           <div class="col-lg-4 offset-2">
             <img
               class="shop__girl"
-              src="@/assets/img/coffee_goods.jpg"
+              src="@/assets/img/coffee_girl.jpg"
               alt="girl"
             />
           </div>
@@ -42,9 +42,30 @@
             </div>
           </div>
         </div>
-
         <div class="line"></div>
-
+        <div class="row">
+          <div class="col-lg-4 offset-2">
+            <form action="#" class="shop__search">
+              <label class="shop__search-label" for="filter">Looking for</label>
+              <input
+                id="filter"
+                type="text"
+                placeholder="start typing here..."
+                class="shop__search-input"
+              />
+            </form>
+          </div>
+          <div class="col-lg-4">
+            <div class="shop__filter">
+              <div class="shop__filter-label">Or filter</div>
+              <div class="shop__filter-group">
+                <button class="shop__filter-btn">Brazil</button>
+                <button class="shop__filter-btn">Kenya</button>
+                <button class="shop__filter-btn">Columbia</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-lg-10 offset-lg-1">
             <div class="shop__wrapper">
@@ -68,5 +89,48 @@ import CardProductComponent from "@/components/CardProductComponent.vue";
 
 export default {
   components: { NavbarComponent, CardProductComponent },
+
+  data() {
+    return {
+      goods: [
+        {
+          id: 0,
+          image: "coffee-1.jpg",
+          name: "Solimo Coffee Beans 2kg",
+          price: "10.73$",
+        },
+        {
+          id: 1,
+          image: "coffee-1.jpg",
+          name: "Solimo Coffee Beans 2kg",
+          price: "10.73$",
+        },
+        {
+          id: 2,
+          image: "coffee-1.jpg",
+          name: "Solimo Coffee Beans 2kg",
+          price: "10.73$",
+        },
+        {
+          id: 3,
+          image: "coffee-1.jpg",
+          name: "Solimo Coffee Beans 2kg",
+          price: "10.73$",
+        },
+        {
+          id: 4,
+          image: "coffee-1.jpg",
+          name: "Solimo Coffee Beans 2kg",
+          price: "10.73$",
+        },
+        {
+          id: 5,
+          image: "coffee-1.jpg",
+          name: "Solimo Coffee Beans 2kg",
+          price: "10.73$",
+        },
+      ],
+    };
+  },
 };
 </script>
