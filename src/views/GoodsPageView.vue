@@ -48,12 +48,42 @@
         <div class="row">
           <div class="col-lg-10 offset-lg-1">
             <div class="shop__wrapper">
-              <card-product-component></card-product-component>
-              <card-product-component></card-product-component>
-              <card-product-component></card-product-component>
-              <card-product-component></card-product-component>
-              <card-product-component></card-product-component>
-              <card-product-component></card-product-component>
+              <card-product-component
+                classItem="shop__item"
+                :name="goods[0].name"
+                :price="goods[0].price"
+                :image="goods[0].image"
+              ></card-product-component>
+              <card-product-component
+                classItem="shop__item"
+                :name="goods[1].name"
+                :price="goods[1].price"
+                :image="goods[1].image"
+              ></card-product-component>
+              <card-product-component
+                classItem="shop__item"
+                :name="goods[2].name"
+                :price="goods[2].price"
+                :image="goods[2].image"
+              ></card-product-component>
+              <card-product-component
+                classItem="shop__item"
+                :name="goods[3].name"
+                :price="goods[3].price"
+                :image="goods[3].image"
+              ></card-product-component>
+              <card-product-component
+                classItem="shop__item"
+                :name="goods[4].name"
+                :price="goods[4].price"
+                :image="goods[4].image"
+              ></card-product-component>
+              <card-product-component
+                classItem="shop__item"
+                :name="goods[5].name"
+                :price="goods[5].price"
+                :image="goods[5].image"
+              ></card-product-component>
             </div>
           </div>
         </div>
@@ -75,37 +105,37 @@ export default {
           id: 0,
           image: "coffee-1.jpg",
           name: "Solimo Coffee Beans 2kg",
-          price: "10.73$",
+          price: 10.73,
         },
         {
           id: 1,
-          image: "coffee-1.jpg",
-          name: "Solimo Coffee Beans 2kg",
-          price: "10.73$",
+          image: "coffee-2.jpg",
+          name: "Presto Coffee Beans 1kg",
+          price: 15.99,
         },
         {
           id: 2,
-          image: "coffee-1.jpg",
-          name: "Solimo Coffee Beans 2kg",
-          price: "10.73$",
+          image: "coffee-3.jpg",
+          name: "AROMISTICO Coffee 1kg",
+          price: 6.99,
         },
         {
           id: 3,
           image: "coffee-1.jpg",
           name: "Solimo Coffee Beans 2kg",
-          price: "10.73$",
+          price: 10.73,
         },
         {
           id: 4,
-          image: "coffee-1.jpg",
-          name: "Solimo Coffee Beans 2kg",
-          price: "10.73$",
+          image: "coffee-2.jpg",
+          name: "Presto Coffee Beans 1kg",
+          price: 15.99,
         },
         {
           id: 5,
-          image: "coffee-1.jpg",
-          name: "Solimo Coffee Beans 2kg",
-          price: "10.73$",
+          image: "coffee-3.jpg",
+          name: "AROMISTICO Coffee 1kg",
+          price: 6.99,
         },
       ],
     };
