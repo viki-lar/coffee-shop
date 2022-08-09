@@ -19,13 +19,17 @@
               We makes every day full of energy and taste
             </div>
             <div class="preview__subtitle">Want to try our beans?</div>
-            <a href="./coffeepage.html" class="preview__btn">More</a>
+            <a 
+            href="./coffeepage.html" 
+            class="preview__btn"
+            @click.prevent="smothScroll"
+            >More</a>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="about">
+    <section class="about" id="about" ref="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 offset-lg-3">
@@ -54,7 +58,7 @@
         </div>
       </div>
     </section>
-    <section class="best">
+    <section class="best" ref="OurBest">
       <div class="container">
         <div class="title">Our best</div>
         <div class="row">
@@ -110,5 +114,16 @@ export default {
       ],
     };
   },
+  methods:{
+    smothScroll(){
+      this.$refs.OurBest.scrollIntoView({
+        block:"start",
+        behavior:"smooth"
+      });
+      
+    }
+  },
+  
+ 
 };
 </script>
